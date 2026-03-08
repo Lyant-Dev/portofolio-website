@@ -97,7 +97,7 @@ svg {
   height: auto;
 }
 .container {
-  max-width: 1400px;
+  max-width: 1120px;
   margin-inline: 1.5rem;
 }
 .grid {
@@ -682,13 +682,13 @@ svg {
   }
 
   .blur-header::after {
-    backdrop-filter: blur(25px);
     -webkit-backdrop-filter: blur(25px); /*For Safari */
+    backdrop-filter: blur(25px);
   }
 }
 @media screen and (min-width: 1152px) {
   .container {
-    max-width: 1320px;
+    max-width: 1120px;
     margin-inline: auto;
   }
   .home__container {
