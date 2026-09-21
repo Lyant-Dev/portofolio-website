@@ -107,7 +107,7 @@ body {
 .home-content span {
   color: hsl(208, 84%, 57%);
   font-weight: 500;
-  letter-spacing: .075rem;
+  letter-spacing: 0.075rem;
 }
 .home-content h1 {
   font-family: var(--main-font);
@@ -217,7 +217,17 @@ body {
     transform: translateY(-8px) rotate(-45deg);
   }
   .home {
-    width: 600px;
+    width: 680px;
+  }
+  .home-content {
+    margin: 2rem 2rem;
+  }
+  .home-btn-dark,
+  .home-btn-light {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 1.5rem;
+    padding: 0.5rem 1.25rem;
   }
 }
 
@@ -227,9 +237,9 @@ body {
   }
   .navbar-logo {
     font-size: 1.25rem;
+    .navbar-container .navbar-menu li a {
+      font-size: 0.925rem;
+      padding: 3px 15px;
+    }
   }
-}
-.navbar-container .navbar-menu li a {
-  font-size: 0.925rem;
-  padding: 3px 15px;
 }
