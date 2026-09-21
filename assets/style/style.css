@@ -182,7 +182,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.7rem !important;
+    gap: 3rem !important;
     position: absolute;
     height: 100vh;
     width: 250px;
@@ -197,6 +197,7 @@ body {
     transform: translateX(100%);
     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
     z-index: 998;
+    font-size: var(--medium-font-size);
   }
   .navbar-toggle {
     display: block;
@@ -214,6 +215,9 @@ body {
   }
   .navbar-toggle.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
+  .home {
+    width: 600px;
   }
 }
 
