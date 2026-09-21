@@ -171,6 +171,24 @@ body {
   object-position: bottom;
   justify-self: center;
 }
+.home-btn-dark,
+.home-btn-light {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 1.5rem;
+  padding: 0.5rem auto;
+}
+
+.home-btn-dark i,
+.home-btn-light i {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.home-btn-dark:hover i,
+.home-btn-light:hover i {
+  transform: translateX(4px);
+}
 
 /* ========== BREAKPOINTS ========== */
 /* ====== TABLET ======= */
@@ -216,12 +234,6 @@ body {
   .navbar-toggle.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-  .home {
-    width: 680px;
-  }
-  .home-content {
-    margin: 2rem 2rem;
-  }
   .home-btn-dark,
   .home-btn-light {
     display: flex;
@@ -230,16 +242,82 @@ body {
     padding: 0.5rem 1.25rem;
   }
 }
+@media (max-width: 768px) {
+  .home {
+    width: 100%;
+    max-width: 580px;
+    display: grid;
+    margin: 2rem auto;
+    grid-template-columns: 1fr;
+  }
+  .home-content {
+    justify-self: center;
+    align-items: center;
+  }
+  .home-content span {
+    font-size: 1.2rem;
+  }
+  .home-content h1 {
+    font-size: 3.5rem;
+  }
+  .home-content h2 {
+    font-size: 2.25rem;
+  }
+  .home-content p {
+    font-size: 1.2rem;
+  }
 
+  .home img {
+    width: 220px;
+    height: 220px;
+    order: -1;
+  }
+  .home-btn-dark,
+  .home-btn-light {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 1.5rem;
+    padding: 0.5rem auto;
+  }
+}
 @media (max-width: 480px) {
   .navbar-container {
     padding: 0 1rem;
   }
   .navbar-logo {
     font-size: 1.25rem;
-    .navbar-container .navbar-menu li a {
-      font-size: 0.925rem;
-      padding: 3px 15px;
-    }
+  }
+  .navbar-container .navbar-menu li a {
+    font-size: 0.925rem;
+    padding: 3px 15px;
+  }
+  .home {
+    width: 100%;
+    max-width: 350px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+  .home-content {
+    justify-self: center;
+  }
+  .home img {
+    width: 180px;
+    height: 180px;
+    order: -1;
+  }
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+  .home-content h2 {
+    font-size: 1.4rem;
+  }
+  .home-content p {
+    font-size: 1.1rem;
+  }
+  .home-content span {
+    font-weight: 500;
+    letter-spacing: 0.001rem;
   }
 }
