@@ -24,8 +24,7 @@ body {
   font-family: var(--secondary-font);
   min-height: 100vh;
   background-color: var(--secondary-color);
- overflow-x: hidden;
- 
+  overflow-x: hidden;
 }
 /* ======== NAVBAR ======== */
 .navbar {
@@ -215,6 +214,7 @@ body {
   justify-self: center;
 }
 .about-content {
+  margin: 0 auto;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -234,7 +234,7 @@ body {
 .about-content p {
   font-family: var(--main-font);
   font-size: var(--small-font-size);
-  margin: 0.5rem 0;
+  margin: 0.5rem auto;
   font-weight: 200;
   line-height: 1.5;
 }
@@ -275,6 +275,41 @@ body {
   width: 35px;
   height: 35px;
   object-fit: contain;
+}
+
+/* =============== EXPERIENCE ========== */
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+}
+.experience-timeline h2 {
+  display: inline-flex;
+  font-weight: 500;
+  margin: 2rem auto;
+  background-color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  color: var(--paragraph-color-dark);
+  border: 2px solid var(--paragraph-color-dark);
+  border-radius: 20px;
+}
+.experience-timeline h3 {
+  font-family: var(--second-font);
+  display: inline-flex;
+  font-weight: 400;
+  margin: 1rem auto;
+  background-color: var(--main-color);
+  padding: 0.5rem 1rem;
+  color: var(--paragraph-color-light);
+  border: 2px solid var(--paragraph-color-light);
+  border-radius: 20px;
+}
+.timeline-content p {
+  font-weight: 200;
+  font-family: var(--main-font);
+  background-color: #ffffff;
+  width: 400px;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 /* ========== BREAKPOINTS ========== */
@@ -452,6 +487,7 @@ body {
   .about-content p {
     text-wrap: wrap;
     font-size: 1rem;
+    margin: 1rem 1.5rem;
   }
   .about img {
     width: 180px;
