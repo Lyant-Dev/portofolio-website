@@ -311,7 +311,32 @@ body {
   padding: 1rem;
   border-radius: 10px;
 }
-
+.timeline {
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  left: 50%;
+  background: var(--paragraph-color-dark);
+}
+.timeline-item {
+  width: 50%;
+}
+.timeline-item:nth-child(even) {
+  margin-left: 50%;
+}
+.timeline-dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--paragraph-color-dark);
+ 
+}
 /* ========== BREAKPOINTS ========== */
 /* ====== TABLET ======= */
 @media (max-width: 880px) {
