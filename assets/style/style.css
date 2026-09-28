@@ -285,7 +285,8 @@ body {
 .experience-timeline h2 {
   display: inline-flex;
   font-weight: 500;
-  margin: 2rem auto;
+  margin: .5rem auto;
+  margin-top: 2rem;
   background-color: var(--secondary-color);
   padding: 0.5rem 1rem;
   color: var(--paragraph-color-dark);
@@ -296,7 +297,7 @@ body {
   font-family: var(--second-font);
   display: inline-flex;
   font-weight: 400;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   background-color: var(--main-color);
   padding: 0.5rem 1rem;
   color: var(--paragraph-color-light);
@@ -313,6 +314,8 @@ body {
 }
 .timeline {
   position: relative;
+  width: min(100%, 920px);
+  margin: 0 auto;
 }
 .timeline::before {
   content: "";
@@ -324,7 +327,9 @@ body {
   background: var(--paragraph-color-dark);
 }
 .timeline-item {
+  position: relative;
   width: 50%;
+  padding: 0 3rem;
 }
 .timeline-item:nth-child(even) {
   margin-left: 50%;
@@ -335,7 +340,11 @@ body {
   height: 16px;
   border-radius: 50%;
   background: var(--paragraph-color-dark);
- 
+  top: 1.3rem;
+  right: -9px;
+}
+.timeline-item:nth-child(even) .timeline-dot {
+  left: -7px;
 }
 /* ========== BREAKPOINTS ========== */
 /* ====== TABLET ======= */
@@ -517,5 +526,20 @@ body {
   .about img {
     width: 180px;
     height: 180px;
+  }
+  .timeline {
+    width: 100%;
+  }
+  .experience-timeline {
+    max-width: 400px;
+  }
+  .experience-timeline h2 {
+    font-size: .9rem;
+  }
+  .experience-timeline h3 {
+    font-size: .75rem;
+  }
+  .experience-timeline p {
+    font-size: .5;
   }
 }
