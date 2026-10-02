@@ -570,6 +570,17 @@ body {
   .timeline-content p {
     width: 100%;
   }
+   .project-contents {
+    gap: 1.5rem;
+  }
+
+  .project-link {
+    width: 92%;
+  }
+
+  .project-link img {
+    height: 260px;
+  }
 }
 @media (max-width: 768px) {
   .home {
@@ -706,6 +717,23 @@ body {
   }
   .services-content p {
     padding: 0.5rem;
+  }
+  .projects h2 {
+    font-size: 1rem;
+  }
+  .projects p {
+    font-size: 0.75rem;
+  }
+  .project-contents {
+    max-width: 370px;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .project-link {
+    width: 90%;
+  }
+  .project-link img {
+    height: 250px;
   }
 }
 @media (max-width: 480px) {
@@ -846,5 +874,15 @@ body {
   .services-content p {
     font-size: 0.85rem;
     max-width: 330px;
+  }
+  .project-contents {
+    max-width: 370px;
+    grid-template-columns: 1fr;
+  }
+  .project-link {
+    width: 90%;
+  }
+  .project-link img {
+    height: 250px;
   }
 }
