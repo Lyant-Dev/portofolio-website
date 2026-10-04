@@ -246,32 +246,43 @@
       <h2>Contact Me</h2>
       <p>If you would like to get in touch, please fill out the form below:</p>
       <form action="#" class="contact-form" id="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button id="submit-btn" type="submit">Send</button>
+        <div class="form-row">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+          ></textarea>
+        </div>
+
+        <button id="submit-btn" class="submit-btn" type="submit">Send</button>
       </form>
       <div class="social">
         <a
           href="https://x.com/lyant__r"
           target="_blank"
           rel="noopener noreferrer"
-          >Twitter</a
+          ><i class="ri-twitter-line"></i></a
         >
         <a
           href="https://www.instagram.com/himlyant?stkn=cGRlaDFyMnhpa3Vx"
           target="_blank"
           rel="noopener noreferrer"
-          >Instagram</a
+          ><i class="ri-instagram-line"></i></a
         >
         <a
           href="https://github.com/Lyant-Dev"
           target="_blank"
           rel="noopener noreferrer"
-          >GitHub</a
+          ><i class="ri-github-fill"></i></a
         >
       </div>
     </section>
