@@ -6,6 +6,11 @@ const emailJS = function () {
 };
 emailJS();
 
+const contactForm = document.querySelector("#contact-form");
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", contactForm);
+});
 // ======= Navbar Toggle =======
 const navbarToggle = document.querySelector("#navbar-toggle");
 const navbarMenu = document.querySelector("#navbar-menu");
