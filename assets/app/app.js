@@ -6,10 +6,19 @@ const emailJS = function () {
 };
 emailJS();
 
+const serviceID = "service_o0myw6w";
+const templateID = "template_eh56zba";
+
 const contactForm = document.querySelector("#contact-form");
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", contactForm);
+  emailjs.sendForm(serviceID, templateID, contactForm)
+  .then(()=>{
+    
+  })
+  .catch((error)=>{
+    
+  })
 });
 // ======= Navbar Toggle =======
 const navbarToggle = document.querySelector("#navbar-toggle");

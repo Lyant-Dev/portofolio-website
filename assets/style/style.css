@@ -550,10 +550,26 @@ body {
 input,
 textarea {
   background: none;
-
   margin: 0 1rem;
   border: none;
   border-bottom: solid 0.2px var(--secondary-color);
+}
+#contact-form input,
+#contact-form textarea {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+#contact-form input:-webkit-autofill,
+#contact-form input:-webkit-autofill:hover,
+#contact-form input:-webkit-autofill:focus,
+#contact-form textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px var(--main-color) inset;
+  -webkit-text-fill-color: var(--secondary-color);
 }
 textarea {
   resize: none;
