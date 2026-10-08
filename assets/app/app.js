@@ -8,17 +8,22 @@ emailJS();
 
 const serviceID = "service_o0myw6w";
 const templateID = "template_eh56zba";
-
+const formStatus = document.querySelector("#form-status");
 const contactForm = document.querySelector("#contact-form");
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  emailjs.sendForm(serviceID, templateID, contactForm)
-  .then(()=>{
-    
-  })
-  .catch((error)=>{
-    
-  })
+  formStatus.classList.add("active");
+  formStatus.textContent = "Sending...";
+  emailjs
+    .sendForm(serviceID, templateID, contactForm)
+    .then(() => {
+      formStatus.textContent = "Message sent succesfully!";
+      contactForm.reset();
+    })
+    .catch((error) => {
+      console.log(error);
+      formStatus.textContent = "Failed to send message. Please try again!";
+    });
 });
 // ======= Navbar Toggle =======
 const navbarToggle = document.querySelector("#navbar-toggle");

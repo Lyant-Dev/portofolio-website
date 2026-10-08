@@ -591,6 +591,16 @@ textarea {
   transition: all 0.3s ease;
   border: 2px solid var(--paragraph-color-dark);
 }
+.form-status {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.form-status.active {
+    border: solid 0.5px var(--paragraph-color-light);
+  border-radius: 10px;
+  padding: 0.25rem 0.5rem;
+}
 .social {
   display: flex;
   flex-direction: row;
