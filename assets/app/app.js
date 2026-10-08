@@ -1,3 +1,10 @@
+// ================= ANIMATION ON SCROLL ===============
+
+AOS.init({
+  duration: 900, // durasi animasi (ms)
+  once: true, // animasi cuma jalan sekali, gak berulang tiap scroll naik-turun
+});
+
 // ===== EMAIL JS ======
 const emailJS = function () {
   emailjs.init({

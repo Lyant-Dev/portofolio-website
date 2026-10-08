@@ -11,6 +11,8 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- ========== ANIMATION ON SCROLL ========= -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
   <body>
     <!-- ========== NAVBAR ========= -->
@@ -32,8 +34,8 @@
       </div>
     </nav>
     <!-- ========== HOME ========= -->
-    <section class="home" id="home">
-      <div class="home-content">
+    <section class="home" id="home" >
+      <div class="home-content"  data-aos="fade-left">
         <span>DEVELOPMENT | DESIGN | STRATEGY</span>
         <h1>Hello, I'm Lyant Rahmat.</h1>
         <h2>I make it easier to run your business.</h2>
@@ -49,13 +51,13 @@
           >Let's Talk <i class="ri-chat-3-line"></i
         ></a>
       </div>
-      <img src="assets/img/home-img.jpg" alt="Profile Image" />
+      <img src="assets/img/home-img.jpg" alt="Profile Image"  data-aos="fade-right"/>
     </section>
     <!-- ========== ABOUT ========= -->
     <section class="about" id="about">
       <div class="about-container">
-        <img src="assets/img/about-img.jpg" alt="Profile Image" />
-        <div class="about-content">
+        <img src="assets/img/about-img.jpg" alt="Profile Image"  data-aos="fade-left" />
+        <div class="about-content"  data-aos="fade-right">
           <h2>About Me</h2>
           <p>
             I'm a self-taught full-stack developer with years of experience in
@@ -69,7 +71,7 @@
         </div>
       </div>
       <div class="about-list">
-        <article class="about-article">
+        <article class="about-article"  data-aos="fade-up">
           <h3>Skills</h3>
           <ul>
             <li>HTML</li>
@@ -80,7 +82,7 @@
           </ul>
         </article>
 
-        <div class="tools">
+        <div class="tools"  data-aos="fade-up" >
           <h3>Tools</h3>
           <ul>
             <li>
@@ -97,10 +99,10 @@
       </div>
     </section>
     <!-- ============ EXPERIENCE ========= -->
-    <section class="experience-timeline" id="experience">
-      <h2>My Journey</h2>
+    <section class="experience-timeline" id="experience"  data-aos="fade-up">
+      <h2 data-aos="fade-down">My Journey</h2>
       <div class="timeline">
-        <div class="timeline-item">
+        <div class="timeline-item"  data-aos="fade-left">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <h3>The Turning Point</h3>
@@ -111,7 +113,7 @@
             </p>
           </div>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item"  data-aos="fade-right">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <h3>Learning to Code</h3>
@@ -123,7 +125,7 @@
             </p>
           </div>
         </div>
-        <div class="timeline-item">
+        <div class="timeline-item"  data-aos="fade-left">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <h3>Building for Real Businesses</h3>
@@ -138,7 +140,7 @@
     </section>
 
     <!-- ============= SERVICES ========= -->
-    <section class="services" id="services">
+    <section class="services" id="services"  data-aos="fade-down">
       <h2>My Services</h2>
       <p>
         I'm a former cook turned self-taught full-stack developer, with hands-on
@@ -174,7 +176,7 @@
       </div>
     </section>
     <!-- ========== PROJECTS ========= -->
-    <section class="projects" id="projects">
+    <section class="projects" id="projects"  data-aos="fade-up">
       <h2>My Portfolio</h2>
       <p>Welcome to my portfolio!</p>
       <div class="project-contents">
@@ -243,9 +245,9 @@
     </section>
     <!-- ========== CONTACT ========= -->
     <section class="contact" id="contact">
-      <h2>Contact Me</h2>
+      <h2 data-aos="fade-up">Contact Me</h2>
       <p>If you would like to get in touch, please fill out the form below:</p>
-      <form action="#" class="contact-form" id="contact-form">
+      <form action="#" class="contact-form" id="contact-form"  data-aos="fade-right">
         <div class="form-row">
           <label for="name">Name:</label>
           <input type="text" id="name" name="user_name" required />
@@ -262,7 +264,7 @@
         <button id="submit-btn" class="submit-btn" type="submit">Send</button>
         <p id="form-status" class="form-status"></p>
       </form>
-      <div class="social">
+      <div class="social"  data-aos="fade-left">
         <a
           href="https://x.com/lyant__r"
           target="_blank"
@@ -287,6 +289,8 @@
     <footer>
       <p>&copy; 2026 Lyant Dev. All rights reserved.</p>
     </footer>
+    <!-- ============ ANIMATION ON SCROLL JS ============ -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- =========== EMAIL JS ============ -->
     <script
       type="text/javascript"

@@ -19,13 +19,13 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  scroll-behavior: smooth;
 }
 body {
   font-family: var(--secondary-font);
   min-height: 100vh;
   background-color: var(--secondary-color);
   overflow-x: hidden;
-  box-sizing: border-box;
 }
 /* ======== NAVBAR ======== */
 .navbar {
@@ -37,7 +37,6 @@ body {
   position: sticky;
   top: 0;
   background: var(--main-color);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   z-index: 999;
 }
