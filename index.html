@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lyant Dev</title>
+    <meta
+      name="description"
+      content="Software developer portfolio for Lyant Rahmat"
+    />
+    <title>Lyant Dev | Software Developer</title>
     <!-- ========= STYLE ========= -->
     <link rel="stylesheet" href="assets/style/style.css" />
     <!-- =========== REMIX ICON =========== -->
@@ -11,8 +14,20 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+
     <!-- ========== ANIMATION ON SCROLL ========= -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Lyant Dev | Software Developer for Businesses"
+    />
+    <meta
+      property="og:description"
+      content="Software developer portfolio for Lyant Rahmat"
+    />
   </head>
   <body>
     <!-- ========== NAVBAR ========= -->
@@ -27,15 +42,15 @@
         <ul class="navbar-menu" id="navbar-menu">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Projects</a></li>
           <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
     <!-- ========== HOME ========= -->
-    <section class="home" id="home" >
-      <div class="home-content"  data-aos="fade-left">
+    <section class="home" id="home">
+      <div class="home-content" data-aos="fade-down">
         <span>DEVELOPMENT | DESIGN | STRATEGY</span>
         <h1>Hello, I'm Lyant Rahmat.</h1>
         <h2>I make it easier to run your business.</h2>
@@ -44,20 +59,28 @@
           tracking, even landing pages that make your business look
           professional.
         </p>
-        <a href="#portfolio" class="home-btn-dark"
+        <a href="#projects" class="home-btn-dark"
           >View Projects <i class="ri-arrow-right-double-line"></i
         ></a>
         <a href="#contact" class="home-btn-light"
           >Let's Talk <i class="ri-chat-3-line"></i
         ></a>
       </div>
-      <img src="assets/img/home-img.jpg" alt="Profile Image"  data-aos="fade-right"/>
+      <img
+        src="assets/img/home-img.jpg"
+        alt="Profile Image"
+        data-aos="fade-up"
+      />
     </section>
     <!-- ========== ABOUT ========= -->
     <section class="about" id="about">
       <div class="about-container">
-        <img src="assets/img/about-img.jpg" alt="Profile Image"  data-aos="fade-left" />
-        <div class="about-content"  data-aos="fade-right">
+        <img
+          src="assets/img/about-img.jpg"
+          alt="Profile Image"
+          data-aos="fade-down"
+        />
+        <div class="about-content" data-aos="fade-up">
           <h2>About Me</h2>
           <p>
             I'm a self-taught full-stack developer with years of experience in
@@ -71,7 +94,7 @@
         </div>
       </div>
       <div class="about-list">
-        <article class="about-article"  data-aos="fade-up">
+        <article class="about-article" data-aos="fade-up">
           <h3>Skills</h3>
           <ul>
             <li>HTML</li>
@@ -82,7 +105,7 @@
           </ul>
         </article>
 
-        <div class="tools"  data-aos="fade-up" >
+        <div class="tools" data-aos="fade-up">
           <h3>Tools</h3>
           <ul>
             <li>
@@ -99,10 +122,10 @@
       </div>
     </section>
     <!-- ============ EXPERIENCE ========= -->
-    <section class="experience-timeline" id="experience"  data-aos="fade-up">
+    <section class="experience-timeline" id="experience" data-aos="fade-up">
       <h2 data-aos="fade-down">My Journey</h2>
       <div class="timeline">
-        <div class="timeline-item"  data-aos="fade-left">
+        <div class="timeline-item" data-aos="fade-down">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <h3>The Turning Point</h3>
@@ -113,7 +136,7 @@
             </p>
           </div>
         </div>
-        <div class="timeline-item"  data-aos="fade-right">
+        <div class="timeline-item" data-aos="fade-down">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <h3>Learning to Code</h3>
@@ -125,7 +148,7 @@
             </p>
           </div>
         </div>
-        <div class="timeline-item"  data-aos="fade-left">
+        <div class="timeline-item" data-aos="fade-down">
           <div class="timeline-dot"></div>
           <div class="timeline-content">
             <h3>Building for Real Businesses</h3>
@@ -140,33 +163,33 @@
     </section>
 
     <!-- ============= SERVICES ========= -->
-    <section class="services" id="services"  data-aos="fade-down">
-      <h2>My Services</h2>
+    <section class="services" id="services" data-aos="fade-down">
+      <h2 data-aos="fade-up">My Services</h2>
       <p>
         I'm a former cook turned self-taught full-stack developer, with hands-on
         experience in the culinary business. Now I dive into the business world
         and love building solutions through code
       </p>
       <div class="services-content">
-        <article class="service-list">
+        <article class="services-list" data-aos="fade-down">
           <h3>Custom Web Application Development:</h3>
           <p>
             Building tailormade, scalable business tools, and software from
             scratch using vanilla JavaScript and local storage.
           </p>
         </article>
-        <article class="service-list">
+        <article class="services-list" data-aos="fade-up">
           <h3>E-Commerce Solutions:</h3>
           <p>Build landing pages for businesses credibility</p>
         </article>
-        <article class="service-list">
+        <article class="services-list" data-aos="fade-down">
           <h3>API Development & Integration:</h3>
           <p>
             Integrating third-party APIs securely, using serverless functions to
             protect sensitive keys.
           </p>
         </article>
-        <article class="service-list">
+        <article class="services-list" data-aos="fade-up">
           <h3>UI/UX Implementation:</h3>
           <p>
             Turning graphic wireframes into responsive, accessible frontend code
@@ -176,11 +199,11 @@
       </div>
     </section>
     <!-- ========== PROJECTS ========= -->
-    <section class="projects" id="projects"  data-aos="fade-up">
+    <section class="projects" id="projects" data-aos="fade-up">
       <h2>My Portfolio</h2>
       <p>Welcome to my portfolio!</p>
       <div class="project-contents">
-        <article class="project">
+        <article class="project" data-aos="fade-down">
           <a
             href="https://lyant-dev.github.io/arofah-taste/"
             target="_blank"
@@ -195,7 +218,7 @@
             </div></a
           >
         </article>
-        <article class="project">
+        <article class="project" data-aos="fade-down">
           <a
             href="https://lyant-dev.github.io/whatsapp-order-generator/"
             target="_blank"
@@ -209,7 +232,7 @@
             </div></a
           >
         </article>
-        <article class="project">
+        <article class="project" data-aos="fade-down">
           <a
             href="https://lyant-dev.github.io/lucro-track-your-profit/"
             target="_blank"
@@ -224,7 +247,7 @@
             </div></a
           >
         </article>
-        <article class="project">
+        <article class="project" data-aos="fade-down">
           <a
             href="https://good-weather-to-deliver.netlify.app/"
             target="_blank"
@@ -244,10 +267,10 @@
       </div>
     </section>
     <!-- ========== CONTACT ========= -->
-    <section class="contact" id="contact">
-      <h2 data-aos="fade-up">Contact Me</h2>
+    <section class="contact" id="contact" data-aos="fade-down">
+      <h2>Contact Me</h2>
       <p>If you would like to get in touch, please fill out the form below:</p>
-      <form action="#" class="contact-form" id="contact-form"  data-aos="fade-right">
+      <form action="#" class="contact-form" id="contact-form">
         <div class="form-row">
           <label for="name">Name:</label>
           <input type="text" id="name" name="user_name" required />
@@ -264,7 +287,7 @@
         <button id="submit-btn" class="submit-btn" type="submit">Send</button>
         <p id="form-status" class="form-status"></p>
       </form>
-      <div class="social"  data-aos="fade-left">
+      <div class="social">
         <a
           href="https://x.com/lyant__r"
           target="_blank"
