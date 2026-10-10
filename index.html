@@ -9,6 +9,13 @@
     <title>Lyant Dev | Software Developer</title>
     <!-- ========= STYLE ========= -->
     <link rel="stylesheet" href="assets/style/style.css" />
+    <!-- ============ GOOGLE FONTS ========= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- =========== REMIX ICON =========== -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
@@ -16,7 +23,6 @@
     />
     <!-- Favicon -->
     <link rel="icon" href="assets/img/favicon.png" type="image/png" />
-
     <!-- ========== ANIMATION ON SCROLL ========= -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <meta property="og:type" content="website" />
@@ -26,7 +32,15 @@
     />
     <meta
       property="og:description"
-      content="Software developer portfolio for Lyant Rahmat"
+      content="Software developer portfolio for Lyant Dev"
+    />
+    <meta
+      property="og:image"
+      content="https://lyant-dev-portofolio.netlify.app/assets/img/og-image.png"
+    />
+    <meta
+      property="og:url"
+      content="https://lyant-dev-portofolio.netlify.app/"
     />
   </head>
   <body>
@@ -34,7 +48,11 @@
     <nav class="navbar">
       <div class="navbar-container">
         <a href="#home" class="navbar-logo">LyantDev</a>
-        <button class="navbar-toggle" id="navbar-toggle">
+        <button
+          class="navbar-toggle"
+          id="navbar-toggle"
+          aria-label="Toggle navigation"
+        >
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
@@ -50,7 +68,7 @@
     </nav>
     <!-- ========== HOME ========= -->
     <section class="home" id="home">
-      <div class="home-content" data-aos="fade-down">
+      <div class="home-content">
         <span>DEVELOPMENT | DESIGN | STRATEGY</span>
         <h1>Hello, I'm Lyant Rahmat.</h1>
         <h2>I make it easier to run your business.</h2>
@@ -66,11 +84,7 @@
           >Let's Talk <i class="ri-chat-3-line"></i
         ></a>
       </div>
-      <img
-        src="assets/img/home-img.jpg"
-        alt="Profile Image"
-        data-aos="fade-up"
-      />
+      <img src="assets/img/home-img.jpg" alt="Profile Image" />
     </section>
     <!-- ========== ABOUT ========= -->
     <section class="about" id="about">
@@ -210,7 +224,7 @@
             rel="noopener noreferrer"
             class="project-link"
           >
-            <img src="assets/img/project-1.png" alt="Business Website" />
+            <img src="assets/img/project-1.jpg" alt="Business Website" />
             <div class="project-overlay">
               <span>Business Website</span>
               <h3>Arofah Taste</h3>
@@ -224,7 +238,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="project-link"
-            ><img src="assets/img/project-2.png" alt="WA Order System" />
+            ><img src="assets/img/project-2.jpg" alt="WA Order System" />
             <div class="project-overlay">
               <span>WA Order System</span>
               <h3>WhatsApp Order Generator</h3>
@@ -289,18 +303,21 @@
       </form>
       <div class="social">
         <a
+          aria-label="Twitter"
           href="https://x.com/lyant__r"
           target="_blank"
           rel="noopener noreferrer"
           ><i class="ri-twitter-line"></i
         ></a>
         <a
+          aria-label="Instagram"
           href="https://www.instagram.com/himlyant?stkn=cGRlaDFyMnhpa3Vx"
           target="_blank"
           rel="noopener noreferrer"
           ><i class="ri-instagram-line"></i
         ></a>
         <a
+          aria-label="GitHub"
           href="https://github.com/Lyant-Dev"
           target="_blank"
           rel="noopener noreferrer"
